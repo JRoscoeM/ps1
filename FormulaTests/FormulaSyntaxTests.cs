@@ -201,7 +201,6 @@ public class FormulaSyntaxTests
         _ = new Formula("34E17");
     }
 
-
     // --- Tests for Closing Parenthesis Rule
     [TestMethod]
     public void FormulaConstructor_TestTwoPairs_Valid()
@@ -216,6 +215,10 @@ public class FormulaSyntaxTests
     }
 
     // --- Tests for Balanced Parentheses Rule
+
+    /// <summary>
+    /// Test that the constructor allows a valid expression contained within 3 sets of parens.
+    /// </summary>
     [TestMethod]
     public void FormulaConstructor_TestTripleParenPairs_Valid()
     {
